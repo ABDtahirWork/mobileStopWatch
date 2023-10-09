@@ -39,18 +39,21 @@ const StopWatch = () => {
       <Timer time={time} />
       <View style={styles.btnContainer}>
         <Button
+          testID='reset-timer'
           onPress={clearTimer}
           title='Reset Timer'
           backgroundColor='green'
         />
         {start ? (
           <Button
+            testID='stop-timer'
             onPress={stopTimer}
             title='Stop Timer'
             backgroundColor='red'
           />
         ) : (
           <Button
+            testID='start-timer'
             onPress={startTimer}
             title='Start Timer'
             backgroundColor='green'
